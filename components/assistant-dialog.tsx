@@ -85,7 +85,7 @@ export default function AssistantDialog({ api }: { api: string }) {
       }
       handleSubmit(e);
     },
-    [handleSubmit, isTokenLimitReached],
+    [handleSubmit, isTokenLimitReached]
   );
 
   const viewportRef = useRef<HTMLDivElement>(null);
@@ -137,7 +137,7 @@ export default function AssistantDialog({ api }: { api: string }) {
         if (form) form.dispatchEvent(formEvent);
       }, 0);
     },
-    [setInput, isTokenLimitReached],
+    [setInput, isTokenLimitReached]
   );
 
   const clearChat = useCallback(() => {
@@ -156,7 +156,7 @@ export default function AssistantDialog({ api }: { api: string }) {
         </div>
       </button>
     ),
-    [],
+    []
   );
 
   const TokenUsageFooter = useMemo(
@@ -181,7 +181,7 @@ export default function AssistantDialog({ api }: { api: string }) {
         </button>
       </div>
     ),
-    [tokenUsage, clearChat, isTokenLimitReached],
+    [tokenUsage, clearChat, isTokenLimitReached]
   );
 
   const EmptyChatState = useMemo(
@@ -232,14 +232,14 @@ export default function AssistantDialog({ api }: { api: string }) {
         </div>
       </div>
     ),
-    [submitExample],
+    [submitExample]
   );
 
   const ChatUI = useMemo(
     () => (
       <ScrollArea
         viewportRef={viewportRef}
-        className="flex-1 overflow-y-auto h-[510px] sm:h-[410px] px-4 mb-4 sm:px-0 sm:mb-0"
+        className="flex-1 overflow-y-auto h-[380px] sm:h-[380px] px-4 mb-4 sm:px-0 sm:mb-0"
       >
         {messages.length === 0 ? (
           EmptyChatState
@@ -254,7 +254,7 @@ export default function AssistantDialog({ api }: { api: string }) {
                   key={message.id}
                   className={cn(
                     "flex items-start gap-3",
-                    isUser ? "justify-end" : "justify-start",
+                    isUser ? "justify-end" : "justify-start"
                   )}
                 >
                   {!isUser && (
@@ -265,7 +265,7 @@ export default function AssistantDialog({ api }: { api: string }) {
                   <div
                     className={cn(
                       "flex flex-col max-w-full sm:max-w-[calc(100%-3.75rem)]",
-                      isUser ? "items-end" : "items-start",
+                      isUser ? "items-end" : "items-start"
                     )}
                   >
                     <div
@@ -273,7 +273,7 @@ export default function AssistantDialog({ api }: { api: string }) {
                         "block w-full rounded-lg px-4 py-2 text-sm",
                         isUser
                           ? "bg-fd-primary text-fd-primary-foreground"
-                          : "bg-fd-muted prose dark:prose-dark prose-code:font-mono prose-code:px-1 prose-code:bg-fd-card prose-code:text-fd-accent-foreground",
+                          : "bg-fd-muted prose dark:prose-dark prose-code:font-mono prose-code:px-1 prose-code:bg-fd-card prose-code:text-fd-accent-foreground"
                       )}
                     >
                       <MemoizedMarkdown
@@ -324,7 +324,7 @@ export default function AssistantDialog({ api }: { api: string }) {
         )}
       </ScrollArea>
     ),
-    [messages, formatTime, EmptyChatState, error, reload],
+    [messages, formatTime, EmptyChatState, error, reload]
   );
 
   const chatFooter = useMemo(
@@ -385,7 +385,7 @@ export default function AssistantDialog({ api }: { api: string }) {
       TokenUsageFooter,
       stop,
       isTokenLimitReached,
-    ],
+    ]
   );
 
   if (isDesktop) {

@@ -11,7 +11,7 @@ import Image from "next/image";
 import banner from "@/public/og-image.png";
 
 export const baseOptions: BaseLayoutProps = {
-  githubUrl: "https://github.com/r4ultv/learn-the-web",
+  githubUrl: undefined,
   nav: {
     title: (
       <>
@@ -100,7 +100,7 @@ export const baseOptions: BaseLayoutProps = {
     },
     {
       text: "Sponsor",
-      url: "https://github.com/sponsors/R4ULtv/",
+      url: "https://buymeacoffee.com/umairfaiser",
       active: "url",
     },
   ],

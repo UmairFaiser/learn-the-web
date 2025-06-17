@@ -14,7 +14,6 @@ import {
   ZapIcon,
 } from "lucide-react";
 
-import { GithubIcon } from "@/lib/icons";
 import gettingStarted from "@/public/getting-started-page.png";
 
 export default function HomePage() {

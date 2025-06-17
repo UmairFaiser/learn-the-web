@@ -8,7 +8,7 @@ import {
 import { notFound } from "next/navigation";
 import defaultMdxComponents from "fumadocs-ui/mdx";
 import { metadataImage } from "@/lib/metadata";
-import { getLastModified } from "@/lib/github";
+// import { getLastModified } from "@/lib/github";
 import { CustomYoutubeEmbed } from "@/components/mdx";
 
 export default async function Page(props: {
@@ -20,13 +20,13 @@ export default async function Page(props: {
 
   const MDX = page.data.body;
 
-  const lastModified = await getLastModified(page);
+  // const lastModified = await getLastModified(page);
 
   return (
     <DocsPage
       toc={page.data.toc}
       full={page.data.full}
-      lastUpdate={lastModified ? new Date(lastModified) : undefined}
+      // lastUpdate={lastModified ? new Date(lastModified) : undefined}
     >
       <DocsTitle>{page.data.title}</DocsTitle>
       <DocsDescription>{page.data.description}</DocsDescription>

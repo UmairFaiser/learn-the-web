@@ -6,8 +6,8 @@
   },
   "dependencies": {
     "ai": "^4.3.16",
-    "hono": "^4.7.10",
-    "workers-ai-provider": "^0.5.2"
+    "hono": "^4.7.11",
+    "workers-ai-provider": "^0.5.3"
   },
   "devDependencies": {
     "wrangler": "^4.17.0"

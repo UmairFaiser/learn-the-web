@@ -19,7 +19,7 @@ const estimateTokens = (text) => Math.ceil(text.length / 4);
 app.use(
   "/*",
   cors({
-    origin: ["https://learn-the-web.vercel.app"],
+    origin: ["https://learntheweb.vercel.app"],
     allowMethods: ["POST", "OPTIONS"],
     maxAge: 600,
   }),

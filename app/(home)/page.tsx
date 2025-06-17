@@ -36,7 +36,7 @@ export default function HomePage() {
           </Link>
           <a
             target="_blank"
-            href="https://github.com/r4ultv/learn-the-web"
+            href="https://github.com/UmairFaiser/learn-the-web"
             className="px-4 py-2.5 rounded-full bg-fd-secondary text-sm text-fd-primary border font-semibold flex items-center hover:-translate-y-0.5 transition ease-out"
           >
             <GithubIcon className="size-4 mr-1.5" />

@@ -11,7 +11,6 @@ import Image from "next/image";
 import banner from "@/public/og-image.png";
 
 export const baseOptions: BaseLayoutProps = {
-  githubUrl: "https://github.com/UmairFaiser/learn-the-web",
   nav: {
     title: (
       <>

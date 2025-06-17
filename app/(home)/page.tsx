@@ -35,16 +35,9 @@ export default function HomePage() {
               href="/docs/fundamentals"
               className="px-4 py-2.5 rounded-full bg-fd-primary text-sm text-fd-secondary font-semibold flex items-center hover:-translate-y-0.5 transition ease-out"
             >
-              Getting Started
+              Get Started 🎉
             </Link>
-            <a
-              target="_blank"
-              href="https://github.com/UmairFaiser/learn-the-web"
-              className="px-4 py-2.5 rounded-full bg-fd-secondary text-sm text-fd-primary border font-semibold flex items-center hover:-translate-y-0.5 transition ease-out"
-            >
-              <GithubIcon className="size-4 mr-1.5" />
-              Contribute
-            </a>
+            
           </div>
           <div className="mt-12 -mb-40 lg:-mb-18 xl:-mx-14 min-w-3xl">
             <Image

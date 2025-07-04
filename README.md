@@ -127,4 +127,4 @@ This project is licensed under the [MIT License](LICENSE).
 
 If you find this project helpful, please consider:
 - Giving it a ⭐️ on GitHub
-- [Becoming a sponsor](https://github.com/sponsors/R4ULtv/)
+- [Becoming a sponsor](https://github.com/sponsors/UmairFaiser/)

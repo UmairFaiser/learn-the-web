@@ -78,7 +78,7 @@ learn-the-web/
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/r4ultv/learn-the-web.git
+git clone https://github.com/UmairFaiser/learn-the-web.git
 ```
 
 2. Install dependencies:
